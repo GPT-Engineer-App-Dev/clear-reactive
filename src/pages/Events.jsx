@@ -18,8 +18,8 @@ const Events = () => {
             <VStack key={event.id} spacing={2} p={4} borderWidth={1} borderRadius={8} width="100%">
               <Heading as="h2" size="md">{event.name}</Heading>
               <Text>Date: {new Date(event.date).toLocaleDateString()}</Text>
-              <Text>Venue ID: {event.venue_id}</Text>
-              <Text>Starred: {event.is_starred ? "Yes" : "No"}</Text>
+              <Text>Venue: {event.venue_name}</Text>
+              <Text>Starred: {event.is_starred ? "⭐" : "No"}</Text>
             </VStack>
           ))
         )}
